@@ -10,9 +10,19 @@ body{
 
     display: flex;
     height: 100vh;
-background-color: rgb(212, 211, 211);
+background-color: rgb(216, 211, 211);
     justify-content: center;
     align-items: center;
+}
+
+h2{
+
+    position: absolute;
+    top: 20%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+    color: purple;
+    text-decoration: underline;
 }
 
 .container{
@@ -95,21 +105,76 @@ background-color: rgb(212, 211, 211);
 }
 
 
-circle {
+#circle1 {
     fill: none;
     stroke: url(#GradientColor);
     stroke-width: 30px;
     stroke-dasharray: 534;
-    animation: anim 2s ease-in forwards;
+    animation: anim1 2s linear forwards;
 }
 
-svg {
+#svg1 {
     position: absolute;
     top: 0;
     left: 0;
 }
 
-@keyframes anim {
+
+
+@keyframes anim1 {
+    0% {
+        stroke-dashoffset: 534;
+    }
+    100% {
+        stroke-dashoffset: 53.4;
+    }
+}
+
+
+#circle2 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 30px;
+    stroke-dasharray: 534;
+    animation: anim2 2s linear forwards;
+}
+
+#svg2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+@keyframes anim2 {
+    0% {
+        stroke-dashoffset: 534;
+    }
+    100% {
+        stroke-dashoffset: 373.8;
+    }
+}
+
+
+
+#circle3 {
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 30px;
+    stroke-dasharray: 534;
+    animation: anim3 2s linear forwards;
+}
+
+#svg3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+
+@keyframes anim3 {
     0% {
         stroke-dashoffset: 534;
     }
